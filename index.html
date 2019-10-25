@@ -7,18 +7,17 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="/uploadFile" enctype="multipart/form-data" type="POST">
+    <form action="/uploadFile" enctype="multipart/form-data" method="POST">
       <input type="file" name="myFile" />
       <input type="submit" value="upload" />
     </form>
     <hr />
-
-    <form action="/uploadFiles" enctype="multipart/form-data" type="POST">
-      <input type="file" name="myFiles" multiple />
+    <form action="/uploadFiles" enctype="multipart/form-data" method="POST">
+      Select multiple images: <input type="file" name="myFiles" multiple />
       <input type="submit" value="upload" />
     </form>
     <hr />
-    <form action="/uploadPhoto" enctype="multipart/form-data" type="POST">
+    <form action="/uploadPhoto" enctype="multipart/form-data" method="POST">
       <input type="file" name="picture" accept="image/*" />
       <input type="submit" value="upload" />
     </form>
